@@ -1,0 +1,156 @@
+body {
+    font-family: Roboto;
+    background: #EEEFF1;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h3, a {
+    color: #000000;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+a, p, span, dt {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.content__text {
+    color: #727272;
+}
+
+.content__submit_info {
+    color: #FFFFFF;
+    background: #34547A;
+}
+
+.header__logo {
+    width: 36%;
+}
+
+.header__text-logo {
+    font-family: 'Revalia';
+    line-height: 60px;
+}
+
+.header__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 46%;
+}
+
+.header__link_text {
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header__text-color {
+    color: #34547A;
+}
+
+.header-content {
+    display: flex;
+    height: 400px;
+    margin-top: 12%;
+}
+
+.header-content__img {
+    align-self: center;
+    width: 35%;
+    margin-left: 25%;
+}
+
+.header-content__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.header-content__btn {
+    width: 45%;
+    height: 15%;
+}
+
+.header-content__btn_text {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.section-wrap {
+    background: #E5E5E5;
+}
+
+.section-wrap__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.content-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 250px;
+    align-items: center;
+}
+
+.content-image__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-image__container_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+.content-info__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skills-level {
+    background: #34547A;
+}
+
+.content-info__img {
+    width: 30%;
+}
+
+.content-info__img-picture {
+    width: 555px;
+    height: 450px;
+}
