@@ -1,11 +1,12 @@
 body {
     font-family: Roboto;
-    background: #EEEFF1;
+    background: #E5E5E5;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding-left: 6%;
 }
 
 a {
@@ -35,6 +36,10 @@ a, p, span, dt {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
+}
+
+.section-wrap {
+    background: #EEEFF1;
 }
 
 .content__text {
@@ -75,13 +80,13 @@ a, p, span, dt {
 .header-content {
     display: flex;
     height: 400px;
-    margin-top: 12%;
+    padding: 12%;
 }
 
 .header-content__img {
     align-self: center;
     width: 35%;
-    margin-left: 25%;
+    margin-left: 17%;
 }
 
 .header-content__text {
@@ -100,22 +105,17 @@ a, p, span, dt {
     text-transform: uppercase;
 }
 
-.section-wrap {
-    background: #E5E5E5;
-}
-
-.section-wrap__content {
+.section-content {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    padding: 7%;
 }
 
 .content-image {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 250px;
     align-items: center;
 }
@@ -123,34 +123,61 @@ a, p, span, dt {
 .content-image__container {
     display: flex;
     flex-direction: row;
+    margin: 2.5%;
 }
 
-.content-image__container_text {
+.content-image__container-text {
     display: flex;
     flex-direction: column;
+    margin-left: 25%;
+}
+
+.content-image__container-text_text {
+    margin: 0;
 }
 
 .content-info {
     display: flex;
-    justify-content: space-around;
-    margin-top: 7%;
+    justify-content: space-evenly;
+    margin: 6% 6% 6% 8%;
 }
 
 .content-info__list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-self: center;
+    height: 320px;
 }
 
-.skills-level {
-    background: #34547A;
+.content-info__list-item {
+    width: 445px;
+    margin: 0;
+    background: #C4C4C4;
 }
 
-.content-info__img {
-    width: 30%;
+.content-info__list-item_item {
+    width: 80%;
+    border: 3px solid #34547A;
 }
 
 .content-info__img-picture {
     width: 555px;
     height: 450px;
+}
+
+.section__replica-video {
+    text-align: center;
+}
+
+.section__replica-video_img {
+    width: 1110px;
+}
+
+.section__replica-video_img_btn {
+    position: relative;
+    bottom: 250px;
+    right: 615px;
+    height: 100px;
+    width: 100px;
 }
