@@ -12,9 +12,7 @@
 </head>
 <body>
     <header class="section-wrap">
-        <div class="header__logo">
-            <h1 class="header__text-logo header__text-color">WD</h1>
-        </div>
+        <div class="header__logo"><h1 class="header__text-logo header__text-color">WD</h1></div>
         <div class="header__link">
             <div class="header__link_container"><a href="" class="header__link_text header__text-color">Главная</a></div>
             <div class="header__link_container"><a href="" class="header__link_text">Об авторе</a></div>
@@ -29,13 +27,13 @@
             </div>
             <div class="header-content__text">
                 <h1 class="header-content__text_title">Дизайн и верстка</h1>
-                <p class="content__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p>
+                <p class="content__text text-container">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p>
                 <button class="header-content__btn content__submit_info" type="submit" ><span class="header-content__btn_text">Написать мне</span></button>
             </div>
         </section>
             <section class="section-content">
                 <div><h2>Обо мне</h2></div>
-                <div><p class="content__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p></div>
+                <div class="div-container__text"><p class="content__text text-container">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p></div>
             </section>
             <section class="content-image content__submit_info">
                 <div class="content-image__container-content">
@@ -87,7 +85,7 @@
             </section>
             <section class="content-info">
                 <div class="content-info__list">
-                    <h2>Мои навыки</h2>
+                    <h2 class="content-info__list_h2">Мои навыки</h2>
                     <dt class="content__text">Adobe Photoshop</dt>
                     <dd class="content-info__list-item"><div class="content-info__list-item_item"></div></dd>
                     <dt class="content__text">Adobe Photoshop</dt>
@@ -101,13 +99,13 @@
             </section>
             <section class="section-content section-wrap">
                 <div><h2>Как я работаю</h2></div>
-                <div><p class="content__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p></div>
+                <div><p class="content__text text-container">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p></div>
             </section>
             <section class="section__replica-video section-wrap">
                 <div class="section__replica-video-box" >
-                <img class="section__replica-video_img" src="img/Rectangle 5.jpg" alt="code editor, JavaScript">
-            </div>
-                <img class="section__replica-video_img_btn" src="img/play-button.svg" alt="play-button">
+                    <img class="section__replica-video_img" src="img/Rectangle 5.jpg" alt="code editor, JavaScript">
+                    <div class="section__replica-video_overlay"><img src="img/play-button.svg" alt="play-button"></div>
+                </div>
             </section>
             <section class="section-container">
                 <div class="section_container_box">
@@ -136,7 +134,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="section_container_box">
                     <div class="section-container__picture">
                         <img class="section-container__picture_img" src="img/Rectangle 7.7.jpg" alt="people solve tasks">
@@ -166,16 +163,16 @@
             </section>
             <section class="section-content section-wrap">
                 <div><h2>Хотите веб-сайт?</h2></div>
-                <div><p class="content__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p></div>
+                <div><p class="content__text text-container">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p></div>
             </section>
             <section class="form section-wrap">
                 <form action="">
-                    <div>
-                        <input class="form__input" type="text" placeholder="Ваше имя">
-                        <input class="form__input" type="text" placeholder="Ваш  email">
+                    <div class="form__container">
+                        <div class="form__container_input"><input class="form__input form-content" type="text" placeholder="Ваше имя"></div>
+                        <div class="form__container_input"><input class="form__input form-content" type="text" placeholder="Ваш  email"></div>
                     </div>
-                    <div>
-                     <textarea class="form__input_message" type="text" placeholder="Сообщение"></textarea>
+                    <div class="form__container_message">
+                     <textarea class="form__input_message form-content" type="text" placeholder="Сообщение"></textarea>
                     </div>
                 </form>
                 <div><button class="content__submit_info btn-submit__container" type="submit"><span class="header-content__btn_text btn-submit">Отправить</span></button></div>
