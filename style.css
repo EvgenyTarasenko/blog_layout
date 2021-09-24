@@ -9,7 +9,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 23px;
 }
 
 a {
@@ -36,6 +36,12 @@ a, p, span, dt {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
+}
+
+a, 
+button,
+.click-picture {
+    cursor: pointer;
 }
 
 .section-wrap {
@@ -122,10 +128,10 @@ a, p, span, dt {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 92px;
+    padding-top: 88px;
 }
 
-.div-container__text {
+.text-box {
     padding-top: 12px;
 }
 
@@ -164,7 +170,7 @@ a, p, span, dt {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 102px 0 90px 0;
+    padding: 104px 0 90px 0;
 }
 
 
@@ -172,10 +178,18 @@ a, p, span, dt {
     display: flex;
     flex-direction: column;
     align-self: center;
-    justify-content: space-evenly;
-    height: 325px;
-    padding: 0 64px 27px 0;
+    height: 350px;
+    /* padding-right: 64px; */
+    width: 31%;
 }
+
+.content-info__list-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 219px;
+}
+
 
 .content-info__list-item {
     width: 445px;
@@ -186,23 +200,25 @@ a, p, span, dt {
 
 .content-info__list-item_item {
     width: 80%;
-    border: 3px solid #34547A;
+    border: 2px solid #34547A;
 }
 
 .content-info__img {
     display: flex;
-    height: 450px;
-    padding: 0 0px 0px 88px;
+    /* height: 450px;
+    padding: 0 0px 0px 88px; */
+    width: 29%;
 }
 
 .content-info__img-picture {
     width: 100%;
+    height: 100%;
 }
 
 .section__replica-video {
     display: flex;
     width: 58%;
-    padding: 3% 21% 4% 21%;
+    padding: 3% 21% 5% 21%;
 }
 
 .section__replica-video_img {
@@ -231,7 +247,7 @@ a, p, span, dt {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 30px 0 30px 0;
+    padding: 25px 0 25px 0;
 }
 
 .section_container_box {
@@ -353,11 +369,11 @@ a, p, span, dt {
     font-size: 13px;
 }
 
-.footer__info_logo_container {
+.footer__info_link_container {
     align-self: center;
 }
 
-.footer__info_logo {
+.footer__info_link {
     margin-right: 20px;
 }
 
@@ -375,6 +391,15 @@ a, p, span, dt {
     .header-content__btn {
         width: 34%;
     }
+
+    .content-info {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .content-info__img {
+        width: 37%;
+    }
 }
 
 @media (max-width:1280px) {
@@ -390,6 +415,10 @@ a, p, span, dt {
 
     .header-content__btn {
         width: 37%;
+    }
+
+    .content-info__img {
+        width: 43%;
     }
 }
 
@@ -438,9 +467,16 @@ a, p, span, dt {
     .content-info__list {
         padding: 0 30px 27px 25px;
     } 
+
+    .content-info__img {
+        width: 52%;
+    }
 }
 
 @media (max-width: 900px) {
+    header {
+        padding-top: 14px;
+    }
     
     h1 {
         font-size: 36px;
@@ -458,7 +494,9 @@ a, p, span, dt {
 
     .header__text-logo {
         font-size: 48px;
-        padding: 0 0 8% 20%;
+        /* padding: 0 0 8% 20%; */
+        padding: 0 0 8% 6%;
+        margin: 0;
     }
 
     .header__link {
@@ -510,15 +548,12 @@ a, p, span, dt {
         margin: 0;
     }
 
-    .content-info {
-        flex-direction: column-reverse;
-    }
-
     .content-info__list {
         padding: 0;
+        width: auto;
     }
 
-    .content-info__list_h2 {
+    .content-info__list_title {
         text-align: center;
     }
 
@@ -527,12 +562,13 @@ a, p, span, dt {
     }
 
     .content-info__img {
-        height: 450px;
-        padding: 18px;
+        /* height: 450px;
+        padding: 18px; */
         justify-content: center;
+        width: 63%;
     }
     .content-info__img-picture {
-        width: 80%;
+        /* width: 80%; */
     }
 
     .section-container {
@@ -583,7 +619,7 @@ a, p, span, dt {
 
 @media (max-width: 500px) {
     .header__text-logo{
-        padding: 0 0 8% 4%;
+        /* padding: 0 0 8% 4%; */
     }
 
     .header-content__btn {
@@ -591,16 +627,19 @@ a, p, span, dt {
     }
 
     .content-info__img {
-        height: 275px;
-        padding: 18px;
+        /* height: 275px;
+        padding: 18px; */
+        width: 91%;
     }
 
     .section__replica-video {
         width: 90%;
         padding: 3% 5% 4% 5%;
     }
-    .footer__info_logo {
+    .footer__info_link {
         margin-right: 10px;
         margin-left: 11px;
     }
 }
+
+
