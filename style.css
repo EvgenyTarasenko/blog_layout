@@ -179,7 +179,6 @@ button,
     flex-direction: column;
     align-self: center;
     height: 350px;
-    /* padding-right: 64px; */
     width: 31%;
 }
 
@@ -205,8 +204,6 @@ button,
 
 .content-info__img {
     display: flex;
-    /* height: 450px;
-    padding: 0 0px 0px 88px; */
     width: 29%;
 }
 
@@ -244,21 +241,13 @@ button,
 }
 
 .section-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 25px 0 25px 0;
-}
-
-.section_container_box {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 
 .section-container__picture {
     position: relative;
-    width: 25%;
     background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
 }
 
@@ -281,7 +270,7 @@ button,
 }
 
 .overlay-image__img {
-    height: 100px;
+    height: 58px;
 }
 
 .section-container__picture:hover .section-container__picture_img {
@@ -305,7 +294,7 @@ button,
 } 
 
 .form__container_input {
-    width: 45%;
+    width: 47%;
     height: 40px;
 }
 
@@ -333,6 +322,7 @@ button,
 
 .form-content::placeholder {
     color: #5F5D5D;
+    padding: 10px 0 0 20px;
 }
 
 .btn-submit__container {
@@ -482,8 +472,16 @@ button,
         font-size: 36px;
     }
 
+    h2 {
+        margin: 0;
+    }
+
     br {
         display: none;
+    }
+
+    .main_logo {
+        width: 298px;
     }
 
     .header__logo {
@@ -494,7 +492,6 @@ button,
 
     .header__text-logo {
         font-size: 48px;
-        /* padding: 0 0 8% 20%; */
         padding: 0 0 8% 6%;
         margin: 0;
     }
@@ -507,13 +504,13 @@ button,
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: auto;
+        height: 677px;
     }
 
     .header-content__img {
         justify-content: center; 
         width: 298px;
-        padding: 0;
+        padding: 0 0 10px 0
     }
 
     .header-content__text {
@@ -521,10 +518,15 @@ button,
         padding-left: 0;
         align-items: center;
         text-align: center;
+        padding: 0 0 46px 0;
+    }
+
+    .section-content {
+        padding-top: 105px;
     }
 
     .text-container {
-        padding: 40px 27px;
+        padding: 25px 27px;
     }
 
     .header-content__btn {
@@ -532,8 +534,9 @@ button,
         height: 65px;
     }
 
-    .div-container__text {
-        padding: 0;
+    .content-image {
+        height: 477px;
+        margin-top: 29px;
     }
 
     .content-image__container-content {
@@ -548,13 +551,19 @@ button,
         margin: 0;
     }
 
+    .content-info {
+        height: 625px;
+        padding-top: 100px;
+    }
+
     .content-info__list {
-        padding: 0;
+        padding: 97px 0 0 0;
         width: auto;
     }
 
     .content-info__list_title {
         text-align: center;
+        margin: 0;
     }
 
     .content-info__list-item {
@@ -562,22 +571,16 @@ button,
     }
 
     .content-info__img {
-        /* height: 450px;
-        padding: 18px; */
         justify-content: center;
         width: 63%;
     }
+
     .content-info__img-picture {
-        /* width: 80%; */
+        width: 80%;
     }
 
     .section-container {
-        flex-wrap: nowrap;
-    }
-
-    .section_container_box {
-        flex-direction: column;
- 
+        grid-template-columns: repeat(auto-fill, 50%);
     }
 
     .section-container__picture {
@@ -618,28 +621,39 @@ button,
 }
 
 @media (max-width: 500px) {
-    .header__text-logo{
-        /* padding: 0 0 8% 4%; */
-    }
 
     .header-content__btn {
         width: 60%;
     }
 
     .content-info__img {
-        /* height: 275px;
-        padding: 18px; */
         width: 91%;
+    }
+
+    .content-info__img-picture {
+        width: 100%;
     }
 
     .section__replica-video {
         width: 90%;
-        padding: 3% 5% 4% 5%;
+        padding: 0 5% 4% 5%;
+        height: 245px;
     }
+
+    .section__replica-video-box {
+        height: 186px;
+    }
+
+    .form {
+        padding: 0px 0 100px 0;
+    }
+
+    .form__container_message {
+        padding: 25px 0 32px 0;
+    }
+
     .footer__info_link {
         margin-right: 10px;
         margin-left: 11px;
     }
 }
-
-
